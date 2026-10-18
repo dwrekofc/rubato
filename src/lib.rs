@@ -46,6 +46,7 @@ mod asynchro_fast;
 mod asynchro_sinc;
 mod error;
 mod interpolation;
+mod positions;
 mod sample;
 mod sinc;
 mod slip;
@@ -61,6 +62,7 @@ pub use crate::asynchro_sinc::{SincInterpolationParameters, SincInterpolationTyp
 pub use crate::error::{
     CpuFeature, MissingCpuFeature, ResampleError, ResampleResult, ResamplerConstructionError,
 };
+pub use crate::positions::{SincPositionError, SincPositions};
 pub use crate::sample::Sample;
 pub use crate::slip::Slip;
 #[cfg(feature = "fft_resampler")]
